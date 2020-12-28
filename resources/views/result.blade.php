@@ -20,5 +20,6 @@
             <div class="text-center my-2">These data have been loaded from our cache. We keep These data for only one day</div>
         @endif
     </div>
+    @include('partials.google')
 </body>
 </html>

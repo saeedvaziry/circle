@@ -45,5 +45,6 @@
             </div>
         </div>
     </div>
+    @include('partials.google')
 </body>
 </html>
