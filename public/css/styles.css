@@ -1,0 +1,331 @@
+.wrapper {
+    width: 800px;
+    height: 800px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container {
+    width: 800px;
+    height: 800px;
+    position: relative;
+    background: #834d9b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #834d9b, #d04ed6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #834d9b, #d04ed6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.brand {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.brand:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.img-1 {
+    width: 100px;
+    height: 100px;
+}
+
+.img-2 {
+    width: 80px;
+    height: 80px;
+}
+
+.img-3 {
+    width: 55px;
+    height: 55px;
+}
+
+/* main image */
+
+.img:first-child {
+    left: 400px;
+    top: 400px;
+    width: 170px;
+    height: 170px;
+}
+
+/* first ring */
+
+.img:nth-child(2) {
+    left: 250px;
+    top: 400px;
+}
+
+.img:nth-child(3) {
+    left: 290px;
+    top: 290px;
+}
+
+.img:nth-child(4) {
+    left: 400px;
+    top: 250px;
+}
+
+.img:nth-child(5) {
+    left: 510px;
+    top: 290px;
+}
+
+.img:nth-child(6) {
+    left: 550px;
+    top: 400px;
+}
+
+.img:nth-child(7) {
+    left: 510px;
+    top: 510px;
+}
+
+.img:nth-child(8) {
+    left: 400px;
+    top: 550px;
+}
+
+.img:nth-child(9) {
+    left: 290px;
+    top: 510px;
+}
+
+/* second ring */
+
+.img:nth-child(10) {
+    left: 150px;
+    top: 400px;
+}
+
+.img:nth-child(11) {
+    left: 170px;
+    top: 305px;
+}
+
+.img:nth-child(12) {
+    left: 220px;
+    top: 220px;
+}
+
+.img:nth-child(13) {
+    left: 305px;
+    top: 170px;
+}
+
+.img:nth-child(14) {
+    left: 400px;
+    top: 150px;
+}
+
+.img:nth-child(15) {
+    left: 495px;
+    top: 170px;
+}
+
+.img:nth-child(16) {
+    left: 580px;
+    top: 220px;
+}
+
+.img:nth-child(17) {
+    left: 630px;
+    top: 305px;
+}
+
+.img:nth-child(18) {
+    left: 650px;
+    top: 400px;
+}
+
+.img:nth-child(19) {
+    left: 630px;
+    top: 495px;
+}
+
+.img:nth-child(20) {
+    left: 580px;
+    top: 580px;
+}
+
+.img:nth-child(21) {
+    left: 495px;
+    top: 630px;
+}
+
+.img:nth-child(22) {
+    left: 400px;
+    top: 650px;
+}
+
+.img:nth-child(23) {
+    left: 305px;
+    top: 630px;
+}
+
+.img:nth-child(24) {
+    left: 220px;
+    top: 580px;
+}
+
+.img:nth-child(25) {
+    left: 170px;
+    top: 495px;
+}
+
+/* third ring */
+
+.img:nth-child(26) {
+    left: 70px;
+    top: 400px;
+}
+
+.img:nth-child(27) {
+    left: 75px;
+    top: 328px;
+}
+
+.img:nth-child(28) {
+    left: 97px;
+    top: 259px;
+}
+
+.img:nth-child(29) {
+    left: 137px;
+    top: 195px;
+}
+
+.img:nth-child(30) {
+    left: 190px;
+    top: 137px;
+}
+
+.img:nth-child(31) {
+    left: 255px;
+    top: 100px;
+}
+
+.img:nth-child(32) {
+    left: 327px;
+    top: 80px;
+}
+
+.img:nth-child(33) {
+    left: 400px;
+    top: 70px;
+}
+
+.img:nth-child(34) {
+    left: 473px;
+    top: 80px;
+}
+
+.img:nth-child(35) {
+    left: 545px;
+    top: 100px;
+}
+
+.img:nth-child(36) {
+    left: 610px;
+    top: 137px;
+}
+
+.img:nth-child(37) {
+    left: 663px;
+    top: 195px;
+}
+
+.img:nth-child(38) {
+    left: 703px;
+    top: 259px;
+}
+
+.img:nth-child(39) {
+    left: 725px;
+    top: 328px;
+}
+
+.img:nth-child(40) {
+    left: 730px;
+    top: 400px;
+}
+
+/* ring-3 q-3 */
+
+.img:nth-child(41) {
+    left: 725px;
+    top: 472px;
+}
+
+.img:nth-child(42) {
+    left: 703px;
+    top: 541px;
+}
+
+.img:nth-child(43) {
+    left: 663px;
+    top: 605px;
+}
+
+.img:nth-child(44) {
+    left: 610px;
+    top: 663px;
+}
+
+.img:nth-child(45) {
+    left: 545px;
+    top: 700px;
+}
+
+.img:nth-child(46) {
+    left: 473px;
+    top: 720px;
+}
+
+.img:nth-child(47) {
+    left: 400px;
+    top: 730px;
+}
+
+/* ring-3 q-4 */
+
+.img:nth-child(48) {
+    left: 327px;
+    top: 720px;
+}
+
+.img:nth-child(49) {
+    left: 255px;
+    top: 700px;
+}
+
+.img:nth-child(50) {
+    left: 190px;
+    top: 663px;
+}
+
+.img:nth-child(51) {
+    left: 137px;
+    top: 605px;
+}
+
+.img:nth-child(52) {
+    left: 97px;
+    top: 541px;
+}
+
+.img:nth-child(53) {
+    left: 75px;
+    top: 472px;
+}
