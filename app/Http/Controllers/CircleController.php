@@ -47,7 +47,7 @@ class CircleController extends Controller
             try {
                 DB::beginTransaction();
                 $limit = Limit::query()->lockForUpdate()->first();
-                if ($limit->available == 0) {
+                if ($limit->available <= 0) {
                     return redirect('/');
                 }
 

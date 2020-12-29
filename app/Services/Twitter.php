@@ -57,7 +57,7 @@ class Twitter
      */
     protected function calculateFavorites()
     {
-        $list = Http::withToken(config('twitter.token'))->get("https://api.twitter.com/1.1/favorites/list.json?count=400&screen_name={$this->username}");
+        $list = Http::withToken(config('twitter.token'))->get("https://api.twitter.com/1.1/favorites/list.json?count=200&screen_name={$this->username}");
         if (!$list->ok()) {
             abort(404);
         }
