@@ -86,6 +86,6 @@ class CircleController extends Controller
         Cache::put($username, json_encode([
             'users' => $users,
             'currentUser' => $currentUser
-        ]), now()->addDay());
+        ]), now()->addHours(12));
     }
 }

@@ -57,18 +57,22 @@ class Twitter
      */
     protected function calculateFavorites()
     {
-        $list = Http::withToken(config('twitter.token'))->get("https://api.twitter.com/1.1/favorites/list.json?count=200&screen_name={$this->username}");
+        $list = Http::withToken(config('twitter.token'))->get("https://api.twitter.com/1.1/favorites/list.json?count=300&screen_name={$this->username}");
         if (!$list->ok()) {
             abort(404);
         }
 
         foreach ($list->json() as $fav) {
             $user = $fav['user'];
+            $score = 1;
+            if ($fav['in_reply_to_user_id']) {
+                $score = 1.1;
+            }
             if (isset($this->users[$user['id_str']])) {
                 $existUser = $this->users[$user['id_str']];
-                $this->setUser($user, $existUser['fav'] + 1, $existUser['reply'], $existUser['retweet'], $existUser['score'] + 10);
+                $this->setUser($user, $existUser['fav'] + 1, $existUser['reply'], $existUser['retweet'], $existUser['score'] + $score);
             } else {
-                $this->setUser($user, 1, 0, 0, 10);
+                $this->setUser($user, 1, 0, 0, $score);
             }
         }
     }
