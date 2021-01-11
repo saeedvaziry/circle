@@ -88,6 +88,8 @@ class Twitter
     {
         $this->users[$user['id_str']] = [
             'id' => $user['id_str'],
+            'name' => $user['name'],
+            'screen_name' => $user['screen_name'],
             'avatar' => str_replace('normal', '400x400', $user['profile_image_url_https']),
             'fav' => $fav,
             'reply' => $reply,
