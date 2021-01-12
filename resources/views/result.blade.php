@@ -10,9 +10,9 @@
 <body>
     <div class="wrapper">
         <div class="image-container">
-            <img src="{{ str_replace('normal', '400x400', $currentUser['profile_image_url_https']) }}" class="img" alt="" style="border-radius: 100%;">
+            <img src="{{ str_replace('normal', '400x400', $currentUser['profile_image_url_https']) }}" class="img" alt="{{ $currentUser['name'] }} ({{ $currentUser['screen_name'] }})" style="border-radius: 100%;">
             @foreach($users as $key => $user)
-                <img src="{{ $user['avatar'] }}" style="border-radius: 100%;" alt="" class="img @if($key >= 0 && $key <= 7) img-1 @elseif($key >= 8 && $key <= 23) img-2 @elseif($key >= 24 && $key <= 51) img-3 @endif">
+                <img src="{{ $user['avatar'] }}" style="border-radius: 100%;" alt="{{ $user['name'] }} ({{ $user['screen_name'] }})" class="img @if($key >= 0 && $key <= 7) img-1 @elseif($key >= 8 && $key <= 23) img-2 @elseif($key >= 24 && $key <= 51) img-3 @endif">
             @endforeach
             <a class="brand" href="{{ url('/') }}">circle.ibio.link</a>
         </div>
