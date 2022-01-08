@@ -4,6 +4,4 @@ A funny app that generates a circle of profiles that you mostly engaged with the
 
 ## Demo
 
-https://circle.ibio.link
-
 ![](./public/demo.png)
